@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d99463ab-a184-4b3f-8f44-af304e2ad8ca" name="Changes" comment="made CacheSimulator class">
+      <change afterPath="$PROJECT_DIR$/mem_stream.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lab6.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CacheSimulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CacheSimulator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,9 +40,27 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\angel\Downloads\CPE315\lab6" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="lab6" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="lab6" />
+      <module name="lab6" />
+      <option name="PROGRAM_PARAMETERS" value="mem_stream.1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
