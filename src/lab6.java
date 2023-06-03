@@ -16,6 +16,13 @@ public class lab6 {
         CacheSimulator cache6 = new CacheSimulator(2, 4, 4);
         CacheSimulator cache7 = new CacheSimulator(4, 1, 1);
 
+        // LOGIC
+        // read in address
+        // calculate tag and index
+        // create block w/ tag, put in array at index
+        // for every address, calculate index and see if current tag at index matches new tag
+            // if tags match, count as a hit, otherwise miss
+
         int linenum = 0;
 
         Scanner scnr = new Scanner(file);
