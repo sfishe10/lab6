@@ -15,21 +15,21 @@ public class lab6 {
         int size = 0;
 
 
-        CacheSimulator cache1 = new CacheSimulator(2, 1, 1, 0);
-        CacheSimulator cache2 = new CacheSimulator(2, 1, 2, 0);
-        CacheSimulator cache3 = new CacheSimulator(2, 1, 4, 0);
-        CacheSimulator cache4 = new CacheSimulator(2, 2, 1, 0);
-        CacheSimulator cache5 = new CacheSimulator(2, 4, 1, 0);
-        CacheSimulator cache6 = new CacheSimulator(2, 4, 4, 0);
-        CacheSimulator cache7 = new CacheSimulator(4, 1, 1, 0);
+//        CacheSimulator cache1 = new CacheSimulator(2, 1, 1, 0);
+//        CacheSimulator cache2 = new CacheSimulator(2, 1, 2, 0);
+//        CacheSimulator cache3 = new CacheSimulator(2, 1, 4, 0);
+//        CacheSimulator cache4 = new CacheSimulator(2, 2, 1, 0);
+//        CacheSimulator cache5 = new CacheSimulator(2, 4, 1, 0);
+//        CacheSimulator cache6 = new CacheSimulator(2, 4, 4, 0);
+//        CacheSimulator cache7 = new CacheSimulator(4, 1, 1, 0);
 
-        cache[0] = cache1;
-        cache[1] = cache2;
-        cache[2] = cache3;
-        cache[3] = cache4;
-        cache[4] = cache5;
-        cache[5] = cache6;
-        cache[6] = cache7;
+//        cache[0] = cache1;
+//        cache[1] = cache2;
+//        cache[2] = cache3;
+//        cache[3] = cache4;
+//        cache[4] = cache5;
+//        cache[5] = cache6;
+//        cache[6] = cache7;
 
 
 
@@ -62,7 +62,7 @@ public class lab6 {
             hit_rate = item.getHits()/linenum;
             size = item.getkb()*1024;
             System.out.println("Cache #" + count);
-            System.out.println("Cache size: " + size + "B" + "     Associativity: " + item.getAssociation()+ "     Block size: " + item.getWordblocks());
+            System.out.println("Cache size: " + size + "B" + "     Associativity: " + item.getAssociativity()+ "     Block size: " + item.getWordblocks());
             System.out.println("Hits: " + item.getHits() + "     Hit Rate: " + hit_rate + "%");
             System.out.println("----------------------------");
             count++;

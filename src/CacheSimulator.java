@@ -1,28 +1,18 @@
-public class CacheSimulator {
+public interface CacheSimulator {
 
-    private int kb;
-    private int association;
-    private int wordblocks;
-    private int hits;
+    int kb = 0;
+    int associativity = 0;
+    int wordblocks = 0;
+    int hits = 0;
 
 
-    public CacheSimulator (int kb, int association, int wordblocks, int hits) {
-        this.kb = kb;
-        // if association = 1, cache is direct mapped, otherwise set associative
-        this.association = association;
-        this.wordblocks = wordblocks;
-        this.hits = hits;
-    }
-    public int getkb() {
-        return this.kb;
-    }
-    public int getAssociation() {
-        return this.association;
-    }
-    public int getWordblocks() {
-        return this.wordblocks;
-    }
-    public int getHits() {
-        return this.hits;
-    }
+
+    int getkb();
+    int getAssociativity();
+    int getWordblocks();
+    int getHits();
+
+    void storeAddress(int address, int linenum);
+
+
 }
