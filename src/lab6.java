@@ -62,7 +62,7 @@ public class lab6 {
             hit_rate = item.getHits()/linenum;
             size = item.getkb()*1024;
             System.out.println("Cache #" + count);
-            System.out.println("Cache size: " + size + "B" + "     Associativity: " + item.getAssociativity()+ "     Block size: " + item.getWordblocks());
+            System.out.println("Cache size: " + size + "B" + "     Associativity: " + item.getAssociativity()+ "     Block size: " + item.getWords());
             System.out.println("Hits: " + item.getHits() + "     Hit Rate: " + hit_rate + "%");
             System.out.println("----------------------------");
             count++;

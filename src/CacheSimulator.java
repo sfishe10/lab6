@@ -1,7 +1,6 @@
 public interface CacheSimulator {
 
     int kb = 0;
-    int associativity = 0;
     int wordblocks = 0;
     int hits = 0;
 
@@ -9,10 +8,10 @@ public interface CacheSimulator {
 
     int getkb();
     int getAssociativity();
-    int getWordblocks();
+    int getWords();
     int getHits();
 
-    void storeAddress(int address, int linenum);
+    void accessAddress(int address, int linenum);
 
 
 }
