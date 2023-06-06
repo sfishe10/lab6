@@ -5,11 +5,13 @@ public class FourWayCache implements CacheSimulator {
     private int words;
     private int hits;
     private int indexbits;
+    private int blockoffset;
+    private int indexmask = 1;
 
-    private HashMap<Integer, Data> data1;
-    private HashMap<Integer, Data> data2;
-    private HashMap<Integer, Data> data3;
-    private HashMap<Integer, Data> data4;
+    private HashMap<Integer, Data> data1 = new HashMap<>();
+    private HashMap<Integer, Data> data2 = new HashMap<>();
+    private HashMap<Integer, Data> data3 = new HashMap<>();
+    private HashMap<Integer, Data> data4 = new HashMap<>();
 
 
 
@@ -17,6 +19,13 @@ public class FourWayCache implements CacheSimulator {
         this.kb = kb;
         this.words = words;
         this.indexbits = customLog(2, (((kb/4) * (int)Math.pow(2, 10)) / (words*4)));
+        this.blockoffset = customLog(2, words);
+
+        int i = 0;
+        while (i < indexbits) {
+            indexmask = indexmask | (1 << i);
+            i++;
+        }
     }
 
     private int customLog(int base, int lognum) {
