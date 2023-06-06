@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d99463ab-a184-4b3f-8f44-af304e2ad8ca" name="Changes" comment="index stuff started">
+    <list default="true" id="d99463ab-a184-4b3f-8f44-af304e2ad8ca" name="Changes" comment="one way cache done?">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/OneWayCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OneWayCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TwoWayCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwoWayCache.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685984468957</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="one way cache done?">
+      <created>1686067246032</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686067246032</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,6 +129,7 @@
     <MESSAGE value="made CacheSimulator class" />
     <MESSAGE value="cache classes" />
     <MESSAGE value="index stuff started" />
-    <option name="LAST_COMMIT_MESSAGE" value="index stuff started" />
+    <MESSAGE value="one way cache done?" />
+    <option name="LAST_COMMIT_MESSAGE" value="one way cache done?" />
   </component>
 </project>
