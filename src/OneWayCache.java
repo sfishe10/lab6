@@ -8,6 +8,7 @@ public class OneWayCache implements CacheSimulator {
     private int indexbits;
     private int tagbits;
     private int blockoffset;
+    private int indexmask = 1;
 
     public OneWayCache (int kb, int words) {
         this.kb = kb;
@@ -15,6 +16,12 @@ public class OneWayCache implements CacheSimulator {
         this.indexbits = customLog(2, ((kb * (int)Math.pow(2, 10)) / (words*4)));
         this.blockoffset = customLog(2, (words*4));
         this.tagbits = 32-indexbits-blockoffset-2;
+
+        int i = 0;
+        while (i < indexbits) {
+            indexmask = indexmask | (1 << i);
+            i++;
+        }
     }
     private int customLog(int base, int lognum) {
         return (int)(Math.log(lognum)/Math.log(base));
@@ -35,16 +42,15 @@ public class OneWayCache implements CacheSimulator {
     public void accessAddress(int address, int linenum) {
         // see if tag is at calculated index
             // if yes, update hit count
-            // if no, replace current tag with new tag and linenum
-//        if (blockoffset == 0) {
-//            int index = (address>>(2+blockoffset)) & 0x
-//        }
-//        else if (blockoffset == 1) {
-//            int index = (address>>(2+blockoffset)) & 0x
-//        }
-//        else if (blockoffset == 2) {
-//            int index = (address>>(2+blockoffset)) & 0x
-//        }
+        // replace current tag with new tag and linenum (if tag is the same, it will just update linenum)
+
+        int index = (address >> (2+blockoffset)) & indexmask;
+        int tag = address >> (2+blockoffset+indexbits);
+
+        if (data.get(index).getTag() == tag) {
+            hits++;
+        }
+        data.put(index, new Data(tag, linenum));
 
     }
 }
