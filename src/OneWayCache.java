@@ -13,6 +13,7 @@ public class OneWayCache implements CacheSimulator {
         this.kb = kb;
         this.words = words;
         this.indexbits = customLog(2, ((kb * (int)Math.pow(2, 10)) / (words*4)));
+
         this.blockoffset = customLog(2, words);
 
         int i = 0;
@@ -44,7 +45,6 @@ public class OneWayCache implements CacheSimulator {
 
         int index = (address >> (2+blockoffset)) & indexmask;
         int tag = address >> (2+blockoffset+indexbits);
-
         if (data.get(index) != null && data.get(index).getTag() == tag) {
             hits++;
         }

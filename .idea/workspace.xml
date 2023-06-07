@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d99463ab-a184-4b3f-8f44-af304e2ad8ca" name="Changes" comment="one way cache done?">
+    <list default="true" id="d99463ab-a184-4b3f-8f44-af304e2ad8ca" name="Changes" comment="Made code for printing out cache values and made cache array">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FourWayCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FourWayCache.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/OneWayCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OneWayCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TwoWayCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwoWayCache.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,13 +47,14 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\angel\Downloads\CPE315\lab6" />
+      <recent name="C:\Users\angel\Downloads\CPE315\lab6\src" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="lab6" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="lab6" />
       <module name="lab6" />
-      <option name="PROGRAM_PARAMETERS" value="mem_stream.1" />
+      <option name="PROGRAM_PARAMETERS" value="mem_stream.2" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
