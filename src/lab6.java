@@ -1,3 +1,10 @@
+/*
+    Names: Sadie Fisher and Angelika Canete
+    Section: 01
+    Description: This program simulates a cache and counts the number of hits
+        when accessing a string of addresses.
+ */
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.text.DecimalFormat;
