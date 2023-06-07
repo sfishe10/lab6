@@ -41,12 +41,11 @@ public class TwoWayCache implements CacheSimulator {
         return this.hits;
     }
     public void accessAddress(int address, int linenum) {
-        // see if tag is at calculated index - check both arrays
-        // if yes, update hit count
-        // if no, replace LRU tag with new tag and linenum
+
         int index = (address >> (2+blockoffset)) & indexmask;
         int tag = address >> (2+blockoffset+indexbits);
 
+        // check both arrays for a hit
 
         if ((data1.get(index) != null && data1.get(index).getTag() == tag)) {
             hits++;
@@ -56,12 +55,19 @@ public class TwoWayCache implements CacheSimulator {
             hits++;
             data2.put(index, new Data(tag, linenum));
         }
+
+        // if there's no hit and one of the spots is empty, put the tag in the empty spot
+
         else if (data1.get(index) == null) {
             data1.put(index, new Data(tag, linenum));
         }
         else if (data2.get(index) == null) {
             data2.put(index, new Data(tag, linenum));
         }
+
+        // otherwise if there's no hit and both spots are full, replace the one
+        // with the lowest line number (least recently used)
+
         else {
             if (data1.get(index).getLinenum() < data2.get(index).getLinenum()) {
                 data1.put(index, new Data(tag, linenum));
