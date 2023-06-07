@@ -53,8 +53,11 @@ public class lab6 {
             System.out.println("Cache #" + count);
             System.out.println("Cache size: " + size + "B" + "     Associativity: " + item.getAssociativity()+ "     Block size: " + item.getWords());
             System.out.println("Hits: " + item.getHits() + "     Hit Rate: " + hit_rate + "%");
-            System.out.println("----------------------------");
+            System.out.print("---------------------------");
             count++;
+            if (count < 8) {
+                System.out.print("\n");
+            }
         }
 
     }
